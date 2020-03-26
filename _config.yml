@@ -1,12 +1,12 @@
 # Site settings
-title: Clean
+title: Impopular
 email: jgra86@hotmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hola
+  Cosas interesantes...
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://ian-goode.github.io" # the base hostname & protocol for your site
+url: "https://Caquita-beep.github.io" # the base hostname & protocol for your site
 twitter_username: Yet_another_ODE
-github_username:  jekyll
+github_username:  Caquita-beep
 
 # Build settings
 markdown: kramdown
