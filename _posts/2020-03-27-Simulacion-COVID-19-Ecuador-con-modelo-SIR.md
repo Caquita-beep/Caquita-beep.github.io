@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SIR"
+title:  "Simuacion COVID-19 Ecuador modelo SIR"
 date:   25-03-2020
 categories: simulaciones
 mathjax: true
