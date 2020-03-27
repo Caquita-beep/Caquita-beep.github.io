@@ -5,12 +5,12 @@ date:   25-03-2020
 categories: simulaciones
 mathjax: true
 ---
+Dejenme introducirles el modesto modelo SIR:
 
-\begin{tabular}{l*{6}{c}r}
-Team              & P & W & D & L & F  & A & Pts \\
-\hline
-Manchester United & 6 & 4 & 0 & 2 & 10 & 5 & 12  \\
-Celtic            & 6 & 3 & 0 & 3 &  8 & 9 &  9  \\
-Benfica           & 6 & 2 & 1 & 3 &  7 & 8 &  7  \\
-FC Copenhagen     & 6 & 2 & 1 & 3 &  5 & 8 &  7  \\
-\end{tabular}
+$$
+\begin{align}
+&\frac{dS}{dt} = - \beta SI \label{eq:caca} \\[5pt]
+&\frac{dI}{dt} = \beta SI - \gamma I \label{eq:caca1} \\[5pt]
+&\frac{dR}{dt} = \gamma I \label{eq:caca2}
+\end{align}$$
+con las condiciones iniciales $S(0) = S_0 >0, I(0) = I_0 >0$, $R(0) = 0$. Fijate que $S(t) + I(t) +  R(t) =  S_0 + I_0 = N$, ya que la poblacion, por asuncion, es constante.
