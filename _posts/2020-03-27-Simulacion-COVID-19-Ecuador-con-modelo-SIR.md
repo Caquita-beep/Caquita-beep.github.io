@@ -5,32 +5,31 @@ date:   25-03-2020
 categories: simulaciones
 mathjax: true
 ---
-$\section{Preliminares}$
+$Preliminares$
 
 Antes que nada, quisiera hacerles notar que no me he tomado la molestia de poner tildes en el texto ni simbolos propios del espanol. Mi problema no es con el lenguage, pero el teclado que tengo no se presta y la computadora tampoco me da la opcion de corregir porque estoy escribiendo esto en un editor bastante rudimentario. Es mas, la laptop que uso es una verdadera basura y su sistema operativo Widows es otra. Entonces, a los amantes de la ortografia, entre otros, me disculparan y ojala puedan soportar las tragicas y dolorosas faltas ortograficas.
 
-Ahora bien, escribi este articulo porque, para serles franco, la situacion en la que estamos y la incertidumbre me tiene loco, y  me ha distraido hacerlo, ademas de satisfacer un par de curiosidades personales. Pero espero que, quien lea esto, tambien se distraiga algo, y quizas saque algo positivo. Por cierto, hay un poco de matematicas y, si no te interesa, puedes simplemente saltarte esas partes e ir directamente a la seccion sobre la simulacion, si eso es lo que te llama la atencion. Y recuerda que esto simplemente te muestra tendencias bajo todas las asunciones del modelo que son varias y estimaciones de parametros hechas sobre informacion completa!
+Ahora bien, escribi este articulo porque, para serles franco, la situacion en la que estamos y la incertidumbre me tiene loco, y  me ha distraido hacerlo, ademas de satisfacer un par de curiosidades personales. Pero espero que, quien lea esto, tambien se distraiga algo, y quizas saque algo positivo. Por cierto, hay un poco de matematicas y, si no te interesa, puedes simplemente saltarte esas partes e ir directamente a la seccion sobre la simulacion, aunque no lo recomiendo. En tal caso. sin embargo, recuerda que esto simplemente te muestra tendencias bajo todas las asunciones del modelo que son varias y estimaciones de parametros hechas sobre informacion completa.
 
-\section{Introduccion}
+$Introduccion$
 
 El coronavirus 2 del síndrome respiratorio agudo severo (SARS-CoV-2) es el causante de la enfermedad "coronavirus 2019 (COVID-19)" que nos tiene ahora a todos encerrados. Es un virus que usa ARN monocatenario de sentido positivo como material genetico, el cual puede servir como ARN mensajero y por tanto traducirse en proteína en la célula huésped directamente...
 
-Y esto es todo lo que dire sobre la biologia del virus, por el simple hecho que no me sirve para mis propositos con este escrito. Lo que me interesa es, usando lo que sabemos hasta ahora,  poder escribir sobre respuestas a preguntas como, si nos infectaremos todos? Cuanta gente infectada tiene que haber para que haya una epidemia? Si hay epidemia, que se necesita hacer para que disminuya y desaparezca? Y mas importante aun, cuando mierda se acaba esto? Felizmente existen modelos matematicos simples cuyo proposito es modelar epidemias, y que cualquiera puede usar para explorar y tratar de responder preguntas de interes practico que uno tenga.
-
-Ahora bien, resulta que el modelo en epidemologia mas sencillo y que nos puede dar algunas ideas es el modelo "SIR", letras siendo las inciales de las palabras "Susceptible, Infected, Recovered", del ingles, aunque conincide con sus equivalentes en espanol. Este modelo divide la poblacion en tres compartimentos: el de los suceptibles $S$, los infectados $I$, y los recuperados $R$, como era de esperarse. Bajo este modelo, existen varias asunciones. Se asume, por ejemplo, que los miembros de $R$ no pueden ser re-infectados por el virus. Tampoco hay introduccion/sacada de miembros a la poblacion, fuere por migracion o por nuevos nacimientos o muertes, y esto es decir que la poblacion bajo estudio es constante; se asume que los miembros de toda la poblacion estan distribuidos en proporciones iguales, o sea, que es homogenea: y, para rematar, no se asume un tiempo de incubacion...
- 
-Podran sonar como restricciones muy duras, especialmente la ultima, y no lo voy a negar. Sin embargo, el pequeno modelo SIR, en su simplicidad, te da una buena intuicion  y ademas sus predicciones, sorprendentemente, no son del todo tan malas. He juzgado que por tanto vale la pena hacer el ejercicio. Para la proxima, quizas haga el mismo ejercicio pero con el modelo SEIR que es una extension del SIR, e incluye tiempo de incubacion.
-
+Y esto es todo lo que dire sobre la biologia del virus, por el simple hecho que no me sirve para mis propositos con este escrito. Lo que ahora me interesa es, usando lo que sabemos hasta ahora,  poder escribir sobre respuestas a preguntas como, si nos infectaremos todos? Cuanta gente infectada tiene que haber para que haya una epidemia? Si hay epidemia, que se necesita hacer para que disminuya y desaparezca? Y mas importante aun, cuando mierda se acaba esto? Felizmente existen modelos matematicos simples cuyo proposito es modelar epidemias, y que cualquiera puede usar para explorar y tratar de responder preguntas de interes practico que uno tenga.
 
 \section{El modelo}
 
-Dejenme introducirles el modesto modelo SIR:
+Ahora bien, resulta que el modelo en epidemologia mas sencillo y que nos puede dar algunas ideas es el modelo "SIR", letras siendo las inciales de las palabras "Susceptible, Infected, Recovered", del ingles, aunque conincide con sus equivalentes en espanol. Este modelo divide la poblacion en tres compartimentos: el de los suceptibles $S$, los infectados $I$, y los recuperados $R$. Bajo este modelo, existen varias asunciones. Se asume, por ejemplo, que los miembros de $R$ no pueden ser re-infectados por el virus. Tampoco hay introduccion/sacada de miembros a la poblacion, fuere por migracion o por nuevos nacimientos, muertes... y esto es decir que la poblacion bajo estudio es constante; se asume que los miembros de toda la poblacion estan distribuidos en proporciones iguales, o sea, que es homogenea: y, para rematar, no se asume un tiempo de incubacion... Nada mas lejos de la realidad, pero util, como vamosa ver, sin embargo!
+ 
+Podran sonar como restricciones muy duras, especialmente la ultima, y no lo voy a negar. Sin embargo, el modelo, en su simplicidad, te da una buena intuicion y ademas la informacion que te da, sorprendentemente, no son del todo tan malas. He juzgado que por tanto vale la pena hacer el ejercicio. Para la proxima, quizas haga el mismo ejercicio pero con extensiones del modelo que tampoco son tan complejas y que incluyen periodos de incubacion, muertes, etc.
 
-\begin{align}
+Ahora dejenme introducirles el modesto modelo SIR:
+
+$$
 &\frac{dS}{dt} = - \beta SI \label{eq:caca} \\[5pt]
 &\frac{dI}{dt} = \beta SI - \gamma I \label{eq:caca1} \\[5pt]
 &\frac{dR}{dt} = \gamma I \label{eq:caca2}
-\end{align}
+$$
 con las condiciones iniciales $S(0) = S_0 >0, I(0) = I_0 >0$, $R(0) = 0$. Fijate que $S(t) + I(t) +  R(t) =  S_0 + I_0 = N$, ya que la poblacion, por asuncion, es constante.
 
 Tecnicamente, esto es un sistema de ecuaciones diferenciales ordinarias no lineal. Si te suena complicado, no te lo creas. No lo es. Cada ecuacion te dice de manera cuantificada, el cambio de la
