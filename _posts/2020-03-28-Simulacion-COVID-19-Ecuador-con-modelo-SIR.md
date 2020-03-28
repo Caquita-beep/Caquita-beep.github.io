@@ -125,6 +125,5 @@ Aqui ya te das cuenta que los numeros estan duera de orbita y eso era de esperar
 
 Como fuere, quizas me anime a escribir otro articulo usando extensiones del presente modelo tambien, que son mas apropiados para la circunstancia. Quizas..
 
-
 Bis bald!
 Juan
