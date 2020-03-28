@@ -17,13 +17,13 @@ El coronavirus 2 del síndrome respiratorio agudo severo (SARS-CoV-2) es el caus
 
 Y esto es todo lo que dire sobre la biologia del virus, por el simple hecho que no me sirve para mis propositos con este escrito. Lo que ahora me interesa es, usando lo que sabemos hasta ahora,  poder escribir sobre respuestas a preguntas como, si nos infectaremos todos? Cuanta gente infectada tiene que haber para que haya una epidemia? Si hay epidemia, que se necesita hacer para que disminuya y desaparezca? Y mas importante aun, cuando mierda se acaba esto? Felizmente existen modelos matematicos simples cuyo proposito es modelar epidemias, y que cualquiera puede usar para explorar y tratar de responder preguntas de interes practico que uno tenga.
 
-\section{El modelo}
+$El modelo$
 
 Ahora bien, resulta que el modelo en epidemologia mas sencillo y que nos puede dar algunas ideas es el modelo "SIR", letras siendo las inciales de las palabras "Susceptible, Infected, Recovered", del ingles, aunque conincide con sus equivalentes en espanol. Este modelo divide la poblacion en tres compartimentos: el de los suceptibles $S$, los infectados $I$, y los recuperados $R$. Bajo este modelo, existen varias asunciones. Se asume, por ejemplo, que los miembros de $R$ no pueden ser re-infectados por el virus. Tampoco hay introduccion/sacada de miembros a la poblacion, fuere por migracion o por nuevos nacimientos, muertes... y esto es decir que la poblacion bajo estudio es constante; se asume que los miembros de toda la poblacion estan distribuidos en proporciones iguales, o sea, que es homogenea: y, para rematar, no se asume un tiempo de incubacion... Nada mas lejos de la realidad, pero util, como vamosa ver, sin embargo!
  
 Podran sonar como restricciones muy duras, especialmente la ultima, y no lo voy a negar. Sin embargo, el modelo, en su simplicidad, te da una buena intuicion y ademas la informacion que te da, sorprendentemente, no son del todo tan malas. He juzgado que por tanto vale la pena hacer el ejercicio. Para la proxima, quizas haga el mismo ejercicio pero con extensiones del modelo que tampoco son tan complejas y que incluyen periodos de incubacion, muertes, etc.
 
-Ahora dejenme introducirles el modesto modelo SIR:
+Ahora dejenme introducirles el modesto modelo $SIR$:
 
 $$
 &\frac{dS}{dt} = - \beta SI \label{eq:caca} \\[5pt]
@@ -37,14 +37,14 @@ Tecnicamente, esto es un sistema de ecuaciones diferenciales ordinarias no linea
 
 De importancia en particular son los parametros $\beta$ y $\gamma$. $\beta$ es una fraccion y tiene unidades de contactos por persona por dia. $\gamma$, en cambio, es la fraccion de infectados que se recuperan por unidad de tiempo y no soprendentemente lo llaman, a veces, como "el removal rate". Y fijate que $1/\gamma $ es el tiempo promedio de infeccion. Por ejemplo, si $\gamma = 1/10$, o sea, por dia el $10\%$ de la gente infectada se recupera, entonces $1/\gamma = 10$ dias y esto es decir que, en promedio, son $10$ dias que alguien infectado puede infectar a otros, antes de recuperarse.
 
-\section{Cuando hay epidemia?}
+$Cuando hay epidemia?$
 
 Para ahorrar espacio, usare a veces la notacion de Lagrange para representar derivadas ($\frac{dS}{dt} = S'$). 
 
 Escribe $S'_{*} = -S'$. Ahora (2) es 
-\begin{equation}
+$$
 I' = S'_{*}  - R'
-\end{equation}
+$$
 
 y como $I'$ representa el cambio de cantidad de infectados en un instante de tiempo. para que haya epidemia requerimos que sea positivo, indicando que el numero de infectados incrementa en funcion de tiempo.
 
