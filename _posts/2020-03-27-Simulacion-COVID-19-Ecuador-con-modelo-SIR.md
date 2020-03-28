@@ -93,7 +93,7 @@ Incidentemente, tambien puedes deducir los tiempos de estos eventos...
 
 $Simulacion$ $Ecuador$
 
--$Preliminares$
+$Preliminares$
 
 Para poner el modelo a correr se necesita los valores de los parametros $\beta$ y $\gamma$ y las condiciones iniciales $S_0,I_0, R_0$. Hay que estimarlos y en este caso es particularmente dificil. Primeramente, porque las estimaciones dependeran de los reportes oficiales y esto es un problema. Pues, como ya saben, no hay suficiente diagnostico y por tanto las cifras reportadas realmente no representa las cifras reales. El otro problema es que no sabemos con seguridad si la cifra que el gobierno reporta al publico, es la cifra que ellos tienen y la 'real' aunque, de todas formas, esta cifra tampoco es la cifra real, por la falta de diagnosticos. Entonces, como puedes imaginar, evidentemente las estimaciones basadas en informacion incompleta seguramente no seran precisas, peor aun cuando la incompleta informacion tambien es muy poca. Y para rematar, el modelo $SIR$ no es el apropiado debido a sus restricciones. A pesar de todo esto, es un experimento y me interesa saber las proyecciones que este simple modelo pueda darnos. 
 
@@ -113,7 +113,7 @@ Aqui tienes la simulacion a largo plazo. Recuerden que hacer proyecciones a larg
 
 ![Proyecciones](/EcuadorS.png)
 
-aunque alrededor de nuestra fecha actual los numeros no estan tan disparadps 
+aunque alrededor de nuestra fecha actual los numeros no estan tan disparados 
 
 ![Proyecciones](/EcuadorZ.png)
 
@@ -126,4 +126,4 @@ Aqui ya te das cuenta que los numeros estan mal y eso era de esperarse. Hay vari
 Como fuere, quizas me anime a escribir otro articulo usando extensiones del presente modelo que son mas apropiados para nuestra circunstancia.
 
 Bis bald!
-Juam
+Juan
