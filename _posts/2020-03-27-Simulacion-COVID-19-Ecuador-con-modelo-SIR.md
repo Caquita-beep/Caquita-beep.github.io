@@ -109,5 +109,5 @@ Para la estimaciones, he usado para el 'loss function' en el proceso de optimiza
 
 $Resultados$ $de$ $la$ $simulacion$ $Ecuador$ $con$ $modelo$ $SIR$
 
-Los siguiente datos son actualizados diariamente, a medida que nuevos casos van reportandose, mejorando las estimaciones de los parametros. Mas importante aun, el diario monitoreo de los parametros podra darnos una idea si las tendencias estan mejorando o no.
+Los siguiente datos son actualizados cada tres dias, a medida que nuevos casos van reportandose, mejorando las estimaciones de los parametros. Mas importante aun, el diario monitoreo de los parametros podra darnos una idea si las tendencias estan mejorando o no.
 
