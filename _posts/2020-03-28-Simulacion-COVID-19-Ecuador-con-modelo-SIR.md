@@ -77,7 +77,7 @@ $$ \frac{dI}{dS} = \frac{ \frac{dI}{dS}}{ \frac{dS}{dt}} = -1 + \frac{\gamma}{\b
 
 Invocas el teorema fundamental de calculo 
 
-$$ I(S) = \int_c^s \frac{dI}{dS}\Bigr|_{u=s}du + I(c) = -S + \gamma/\beta \ln{S}+ \text{constante} $$
+$$ I(S) = \int_c^s \frac{dI}{dS}\Bigr|_{u}du + I(c) = -S + \gamma/\beta \ln{S}+ \text{constante} $$
 
 De aqui puedes sacar bastante informacion. Dos pedazos de informacion, por ejemplo, son la cantidad maxima de infectados en un instante de tiempo durante toda la trayectoria $I$
 
