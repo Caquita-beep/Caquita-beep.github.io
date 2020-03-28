@@ -19,17 +19,15 @@ Y esto es todo lo que dire sobre la biologia del virus, por el simple hecho que 
 
 $El$ $modelo$
 
-Ahora bien, resulta que el modelo en epidemologia mas sencillo y que nos puede dar algunas ideas es el modelo "SIR", letras siendo las inciales de las palabras "Susceptible, Infected, Recovered", del ingles, aunque conincide con sus equivalentes en espanol. Este modelo divide la poblacion en tres compartimentos: el de los suceptibles $S$, los infectados $I$, y los recuperados $R$. Bajo este modelo, existen varias asunciones. Se asume, por ejemplo, que los miembros de $R$ no pueden ser re-infectados por el virus. Tampoco hay introduccion/sacada de miembros a la poblacion, fuere por migracion o por nuevos nacimientos, muertes... y esto es decir que la poblacion bajo estudio es constante; se asume que los miembros de toda la poblacion estan distribuidos en proporciones iguales, o sea, que es homogenea: y, para rematar, no se asume un tiempo de incubacion... Nada mas lejos de la realidad, pero util, como vamosa ver, sin embargo!
- 
-Podran sonar como restricciones muy duras, especialmente la ultima, y no lo voy a negar. Sin embargo, el modelo, en su simplicidad, te da una buena intuicion y ademas la informacion que te da, sorprendentemente, no son del todo tan malas. He juzgado que por tanto vale la pena hacer el ejercicio. Para la proxima, quizas haga el mismo ejercicio pero con extensiones del modelo que tampoco son tan complejas y que incluyen periodos de incubacion, muertes, etc.
+Ahora bien, resulta que el modelo en epidemologia mas sencillo y que nos puede dar algunas ideas es el modelo "SIR", letras siendo las inciales de las palabras "Susceptible, Infected, Recovered", del ingles, aunque conincide con sus equivalentes en espanol. Este modelo divide la poblacion en tres compartimentos: el de los suceptibles $S$, los infectados $I$, y los recuperados $R$. Bajo este modelo, existen varias asunciones. Se asume, por ejemplo, que los miembros de $R$ no pueden ser re-infectados por el virus. Tampoco hay introduccion/sacada de miembros a la poblacion, fuere por migracion o por nuevos nacimientos, muertes... y esto es decir que la poblacion bajo estudio es constante; se asume que los miembros de toda la poblacion estan distribuidos en proporciones iguales, o sea, que es homogenea: y, para rematar, no se asume un tiempo de incubacion... Nada mas lejos de la realidad, pero da bastante intuicion sobre la propagacion de enfermedades infeciosas, sin embargo!
 
 Ahora dejenme introducirles el modesto modelo $SIR$:
 
-$$ \frac{dS}{dt} = - \beta SI \\ (1)$$
+$$ \frac{dS}{dt} = - \beta SI \\\\ (1)$$
 
-$$ \frac{dI}{dt} = \beta SI - \gamma I \\ (2) $$
+$$ \frac{dI}{dt} = \beta SI - \gamma I \\\\ (2) $$
 
-$$ \frac{dR}{dt} = \gamma I \\ (3) $$
+$$ \frac{dR}{dt} = \gamma I \\\\ (3) $$
 
 con las condiciones iniciales $S(0) = S_0 >0, I(0) = I_0 >0$, $R(0) = 0$. Fijate que $S(t) + I(t) +  R(t) =  S_0 + I_0 = N$, ya que la poblacion, por asuncion, es constante.
 
@@ -50,7 +48,7 @@ $$
 
 y como $I'$ representa el cambio de cantidad de infectados en un instante de tiempo. para que haya epidemia requerimos que sea positivo, indicando que el numero de infectados incrementa en funcion de tiempo.
 
-Como puedes ver, esta ultima relacion es simplemete una resta que dice que, cuando $I' > 0$, hay mas que se enferman que de los que se recuperan, y por tanto cada vez habran mas infectados y tienes epidemia. Inversamente, si hay mas que se recuperen de los que se enferman, $ I' < 0$, y la poblacion de infectados va agotandose poco a poco hasta que se desvanece, y no hay epidemia. Lo importante de esta simple resta es que puedes deducir que la epidemia se desvanece porque la poblacion de infectados se desvanece y no porque se infectaron todos y se acaba lo poblacion de susceptibles. Esto es sentido comun.
+Como puedes ver, esta ultima relacion es simplemete una resta que dice que, cuando $I' > 0$, hay mas que se enferman que de los que se recuperan, y por tanto cada vez habran mas infectados y tienes epidemia. Inversamente, si hay mas que se recuperen de los que se enferman, $ I' < 0$, y la poblacion de infectados va agotandose poco a poco hasta que se desvanece, y no hay epidemia. Lo importante de esta simple resta es que puedes deducir que la epidemia se desvanece porque la poblacion de infectados se desvanece y no porque se infectaron todos y se acaba lo poblacion de susceptibles.
 
 Ahota observa que cuando hay epidemia
 
@@ -93,7 +91,6 @@ $$ S(\infty)= S_0e^{\beta/\gamma(N_0 - S(\infty))} $$
 siendo este numero positivo (por que?) lo que implica que, segun el modelo, la epidemia termina antes de que todos se infecten y una parte se sale con la suya, en teoria...
 
 Ademas puedes deducir los tiempos de estos eventos...
-
 
 $Simulacion$ $Ecuador$
 
