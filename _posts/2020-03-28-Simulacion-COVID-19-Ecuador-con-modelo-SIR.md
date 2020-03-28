@@ -121,9 +121,9 @@ Valor de los parametros:
 
 ![Proyecciones](/vtab.png)
 
-Aqui ya te das cuenta que los numeros estan duera de orbita y eso era de esperarse. Hay varias posibles razones de la causa y posibles arreglos que puedan enmendar un poco los numeros. Pero eso ya sera para otra ocasion. Ahora me da pereza escribir sobre eso. De hecho, este articulo ha sido mas largo de lo que esperaba. Ademas, si le doy tiempo al tiempo, a medida que hayan mas datos, las estimaciones seran mejores... Eso espero.
+Aqui ya te das cuenta que los numeros estan duera de orbita y eso era de esperarse. Yo personalmente no creo que estemos tan el m. Mas bien creo que tales numeros salen debido a problemas propios de la estimacion de parametros. Hay varias posibles opciones para tratar y enmendar un poco los numeros. Pero eso ya sera para otra ocasion. Ahora me da pereza escribir sobre eso. De hecho, este articulo ha sido mas largo de lo que esperaba. Ademas, si le doy tiempo al tiempo, a medida que hayan mas datos, las estimaciones seran mejores... Eso espero.
 
-Como fuere, quizas me anime a escribir otro articulo usando extensiones del presente modelo tambien, que son mas apropiados para la circunstancia. Quizas..
+Como fuere, quizas tambien me anime a escribir otro articulo usando extensiones del presente modelo, que son mas apropiados para la circunstancia. Quizas..
 
 Bis bald!
 Juan
