@@ -25,16 +25,16 @@ Podran sonar como restricciones muy duras, especialmente la ultima, y no lo voy 
 
 Ahora dejenme introducirles el modesto modelo $SIR$:
 
-$$ \frac{dS}{dt} = - \beta SI  $$
+$$ \frac{dS}{dt} = - \beta SI  (1)$$
 
-$$ \frac{dI}{dt} = \beta SI - \gamma I $$
+$$ \frac{dI}{dt} = \beta SI - \gamma I  (2)$$
 
-$$ \frac{dR}{dt} = \gamma I $$
+$$ \frac{dR}{dt} = \gamma I  (3)$$
 
 con las condiciones iniciales $S(0) = S_0 >0, I(0) = I_0 >0$, $R(0) = 0$. Fijate que $S(t) + I(t) +  R(t) =  S_0 + I_0 = N$, ya que la poblacion, por asuncion, es constante.
 
 Tecnicamente, esto es un sistema de ecuaciones diferenciales ordinarias no lineal. Si te suena complicado, no te lo creas. No lo es. Cada ecuacion te dice de manera cuantificada, el cambio de la
- cantidad de individous de cada compartimento en un instante de tiempo. (\ref{eq:caca}), por ejemplo, te dice que tan rapido cambia la poblacion de $S$ en un instante de tiempo. Que tan rapido es? La respuesta es $- \beta SI$. Por que? Miralo de esta forma:  por cada infectado por instante de tiempo, hay $N\beta$ contactos. De esos  $N\beta$ contactos, $S/N$ son con sucsceptibles (por que?\footnote{Como estamos asumiendo que la poblacion es homgenea, es decir, que en donde hagas un amuestra, siempre tendras las mismas proporciones de diferentes miembros}). Como hay $I$ infectados, estamos hablando que son $(N\beta) (S/N)(I) = \beta SI$. El signo negativo esta includido porque a medida que la gente se infecta, la cantidad de miembros en $S$ disminuye, obviamente. Es decir, si empiezas con una poblacion inicial de $ S_0$ miembros, vas a tener $S(t) < S_0$ para todo $t$ $(t > 0)$. Similarmente, (\ref{eq:caca1}), habla sobre $I$ y puedes ver que su cambio depende del cambio neto entre la gente que se enferma y los que se recuperan.  
+ cantidad de individous de cada compartimento en un instante de tiempo. $(1)$, por ejemplo, te dice que tan rapido cambia la poblacion de $S$ en un instante de tiempo. Que tan rapido es? La respuesta es $- \beta SI$. Por que? Miralo de esta forma: por cada infectado por instante de tiempo, hay $N\beta$ contactos. De esos  $N\beta$ contactos, $S/N$ son con sucsceptibles (por que?\footnote{Como estamos asumiendo que la poblacion es homgenea, es decir, que en donde hagas un amuestra, siempre tendras las mismas proporciones de diferentes miembros}). Como hay $I$ infectados, estamos hablando que son $(N\beta) (S/N)(I) = \beta SI$. El signo negativo esta includido porque a medida que la gente se infecta, la cantidad de miembros en $S$ disminuye, obviamente. Es decir, si empiezas con una poblacion inicial de $ S_0$ miembros, vas a tener $S(t) < S_0$ para todo $t$ $(t > 0)$. Similarmente, (\ref{eq:caca1}), habla sobre $I$ y puedes ver que su cambio depende del cambio neto entre la gente que se enferma y los que se recuperan.  
 
 De importancia en particular son los parametros $\beta$ y $\gamma$. $\beta$ es una fraccion y tiene unidades de contactos por persona por dia. $\gamma$, en cambio, es la fraccion de infectados que se recuperan por unidad de tiempo y no soprendentemente lo llaman, a veces, como "el removal rate". Y fijate que $1/\gamma $ es el tiempo promedio de infeccion. Por ejemplo, si $\gamma = 1/10$, o sea, por dia el $10\%$ de la gente infectada se recupera, entonces $1/\gamma = 10$ dias y esto es decir que, en promedio, son $10$ dias que alguien infectado puede infectar a otros, antes de recuperarse.
 
