@@ -9,7 +9,7 @@ $Preliminares$
 
 Antes que nada, quisiera hacerles notar que no me he tomado la molestia de poner tildes en el texto ni simbolos propios del espanol. Mi problema no es con el lenguage, pero el teclado que tengo no se presta y la computadora tampoco me da la opcion de corregir porque estoy escribiendo esto en un editor bastante rudimentario. Es mas, la laptop que uso es una verdadera basura y su sistema operativo Widows es otra. Entonces, a los amantes de la ortografia, entre otros, me disculparan y ojala puedan soportar las tragicas y dolorosas faltas ortograficas.
 
-Ahora bien, escribi este articulo porque, para serles franco, la situacion en la que estamos y la incertidumbre me tiene loco, y  me ha distraido hacerlo, ademas de satisfacer un par de curiosidades personales. Pero espero que, quien lea esto, tambien se distraiga algo, y quizas saque algo positivo. Por cierto, hay un poco de matematicas y, si no te interesa, puedes simplemente saltarte esas partes e ir directamente a la seccion sobre la simulacion, aunque no lo recomiendo. En tal caso. sin embargo, recuerda que esto simplemente te muestra tendencias bajo todas las asunciones del modelo que son varias y estimaciones de parametros hechas sobre informacion completa.
+Ahora bien, escribi este articulo porque, para serles franco, la situacion en la que estamos y la incertidumbre me tiene loco, y  me ha distraido hacerlo, ademas de satisfacer un par de curiosidades personales. Pero espero que, quien lea esto, tambien se distraiga algo, y quizas saque algo positivo. Por cierto, hay un poco de matematicas y, si no te interesa, puedes simplemente saltarte esas partes e ir directamente a la seccion sobre la simulacion, aunque no lo recomiendo. En tal caso. sin embargo, recuerda que esto simplemente te muestra tendencias bajo todas las asunciones del modelo que son varias y estimaciones de parametros hechas sobre informacion incompleta.
 
 $Introduccion$
 
@@ -23,11 +23,11 @@ Ahora bien, resulta que el modelo en epidemologia mas sencillo y que nos puede d
 
 Ahora dejenme introducirles el modesto modelo $SIR$:
 
-$$ \frac{dS}{dt} = - \beta SI \\\\ (1)$$
+$$ \frac{dS}{dt} = - \beta SI \\\ (1)$$
 
-$$ \frac{dI}{dt} = \beta SI - \gamma I \\\\ (2) $$
+$$ \frac{dI}{dt} = \beta SI - \gamma I \\\ (2) $$
 
-$$ \frac{dR}{dt} = \gamma I \\\\ (3) $$
+$$ \frac{dR}{dt} = \gamma I \\\ (3) $$
 
 con las condiciones iniciales $S(0) = S_0 >0, I(0) = I_0 >0$, $R(0) = 0$. Fijate que $S(t) + I(t) +  R(t) =  S_0 + I_0 = N$, ya que la poblacion, por asuncion, es constante.
 
