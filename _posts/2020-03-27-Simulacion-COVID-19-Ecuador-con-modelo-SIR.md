@@ -83,13 +83,13 @@ De aqui puedes sacar bastante informacion. Dos pedazos de informacion, por ejemp
 
 $$I_{max} = I(\gamma/\beta) = S_0\left( 1 - \frac{1 + \ln{R_0}}{R_0}\right) $$
 
-Y al resolver $ \frac{dS}{dR} = -\frac{\beta}{\gamma}S$, la cantidad de susceptibles que sobran cuando $I = 0$ la tienes al resolverlas raices de la funcion trascendental
+Y al resolver $ \frac{dS}{dR} = -\frac{\beta}{\gamma}S$, la cantidad de susceptibles que sobran cuando $I = 0$ 
 
 $$ S(\infty)= S_0e^{\beta/\gamma(N_0 - S(\infty))} $$
 
-siendo este numero positivo (por que?) lo que implica que, segun el modelo, la epidemia termina antes de que todos se infecten y una parte se sale con la suya, en teoria...
+que la encuntras en las raises de esa funcion trascendental, siendo este numero positivo (por que?) lo que implica que, segun el modelo, la epidemia termina antes de que todos se infecten y una parte se sale con la suya, en teoria...
 
-Ademas puedes deducir los tiempos de estos eventos...
+Incidentemente, tambien puedes deducir los tiempos de estos eventos...
 
 $Simulacion$ $Ecuador$
 
