@@ -23,11 +23,11 @@ Ahora bien, resulta que el modelo en epidemologia mas sencillo y que nos puede d
 
 Ahora dejenme introducirles el modesto modelo $SIR$:
 
-$$ \frac{dS}{dt} = - \beta SI \\\ (1)$$
+$$ \frac{dS}{dt} = - \beta SI \ \ \ (1)$$
 
-$$ \frac{dI}{dt} = \beta SI - \gamma I \\\ (2) $$
+$$ \frac{dI}{dt} = \beta SI - \gamma I \ \ \ (2) $$
 
-$$ \frac{dR}{dt} = \gamma I \\\ (3) $$
+$$ \frac{dR}{dt} = \gamma I \ \ \ (3) $$
 
 con las condiciones iniciales $S(0) = S_0 >0, I(0) = I_0 >0$, $R(0) = 0$. Fijate que $S(t) + I(t) +  R(t) =  S_0 + I_0 = N$, ya que la poblacion, por asuncion, es constante.
 
