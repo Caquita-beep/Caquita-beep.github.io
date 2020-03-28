@@ -113,5 +113,5 @@ Los siguiente datos son actualizados cada tres dias, a medida que nuevos casos v
 
 Aqui tienes la simulacion a largo plazo. Recuerden que hacer proyecciones a largo plazo y con informacion incompleta, especialmente, es un crimen. Como fuere, aqui lo tienes: 
 
-![My helpful screenshot](/Ecuador.png)
+![Proyecciones](/Ecuador.png)
 
