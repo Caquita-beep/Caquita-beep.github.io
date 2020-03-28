@@ -111,15 +111,19 @@ Los siguiente datos son actualizados cada tres dias, a medida que nuevos casos v
 
 Aqui tienes la simulacion a largo plazo. Recuerden que hacer proyecciones a largo plazo y con informacion incompleta, especialmente, es un crimen. Como fuere, aqui lo tienes: 
 
-![Proyecciones](/Ecuador.png)
+![Proyecciones](/EcuadorS.png)
 
-Y alrededor de nuestra fecha actual 
+aunque alrededor de nuestra fecha actual los numeros no estan tan disparadps 
 
 ![Proyecciones](/EcuadorZ.png)
 
 Valor de los parametros:
 
-![Proyecciones](/tabla.png)
+![Proyecciones](/vtab.png)
+
+Aqui ya te das cuenta que los numeros estan mal y eso era de esperarse. Hay varias posibles razones de la causa y posibles arreglos que puedan enmendar un poco los numeros. Pero creanme, ese es otro trabajo, y ahora me da pereza escribir sobre eso. De hecho, este articulo ha sido mas largo de lo que esperaba. Ademas, si le doy tiempo al tiempo, a medida que haya mas datos, las estimaciones seran mejores, espero... 
+
+Como fuere, quizas me anime a escribir otro articulo usando extensiones del presente modelo que son mas apropiados para nuestra circunstancia.
 
 Bis bald!
 Juam
