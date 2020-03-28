@@ -111,3 +111,7 @@ $Resultados$ $de$ $la$ $simulacion$ $Ecuador$ $con$ $modelo$ $SIR$
 
 Los siguiente datos son actualizados cada tres dias, a medida que nuevos casos van reportandose, mejorando las estimaciones de los parametros. Mas importante aun, el diario monitoreo de los parametros podra darnos una idea si las tendencias estan mejorando o no.
 
+Aqui tienes la simulacion a largo plazo. Recuerden que hacer proyecciones a largo plazo y con informacion incompleta, especialmente, es un crimen. Como fuere, aqui lo tienes: 
+
+![My helpful screenshot](/Ecuador.jpg)
+
