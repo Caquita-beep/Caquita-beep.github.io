@@ -23,11 +23,11 @@ Ahora bien, resulta que el modelo en epidemologia mas sencillo y que nos puede d
 
 Ahora dejenme introducirles el modesto modelo $SIR$:
 
-$$ \frac{dS}{dt} = - \beta SI \ \ \ (1)$$
+$$ \frac{dS}{dt} = - \beta SI \ \ \ \ \ (1)$$
 
-$$ \frac{dI}{dt} = \beta SI - \gamma I \ \ \ (2) $$
+$$ \frac{dI}{dt} = \beta SI - \gamma I \ \ \ \ \ (2) $$
 
-$$ \frac{dR}{dt} = \gamma I \ \ \ (3) $$
+$$ \frac{dR}{dt} = \gamma I \ \ \ \ \ (3) $$
 
 con las condiciones iniciales $S(0) = S_0 >0, I(0) = I_0 >0$, $R(0) = 0$. Fijate que $S(t) + I(t) +  R(t) =  S_0 + I_0 = N$, ya que la poblacion, por asuncion, es constante.
 
@@ -58,11 +58,11 @@ Pon $\beta S_0I - \gamma I = I(\beta S_0 - \gamma)$. Entonces
 
 $$I(\beta S_0 - \gamma) > 0 \iff  \beta S_0 - \gamma > 0  \iff \beta S_0 > \gamma $$
 
-De $\beta S_0 > \gamma$ puedes deducir does expresiones equivalentes de interes practico.
+De $\beta S_0 > \gamma$ puedes deducir does expresiones equivalentes de interes practico
 
 $$S_0 >\gamma/\beta \iff S_0\beta/\gamma > 1 $$
 
-Ambas expresiones te dicen bajo que condiciones la epidemia es garantizada. Cuando tienes $S_0 <\gamma/\beta$ (o $R_0 > 1$), tienes epidemia. Inversamente, cuando tienes $S_0 >\gamma/\beta$ (o $R_0 < 1$), no hay epidemia. El minimo valor para que haya epidemia, sin embargo, es cuando $S_0 = \gamma/\beta$ en donde $I' = 0$, como podras verificar. Incidentemente, este punto es cuando
+Ambas expresiones te dicen bajo que condiciones la epidemia es garantizada. Cuando tienes $S_0 <\gamma/\beta \$ (o $R_0 > 1$), tienes epidemia. Inversamente, cuando tienes $S_0 >\gamma/\beta \$ (o $R_0 < 1$), no hay epidemia. El minimo valor para que haya epidemia, sin embargo, es cuando $S_0 = \gamma/\beta$ en donde $I' = 0$, como podras verificar. Incidentemente, este punto es cuando
 
 $$ 0 = S'_{*}  - R' \iff  S'_{*}  = R' $$
 
@@ -78,9 +78,9 @@ $$ \frac{dI}{dS} = \frac{ \frac{dI}{dS}}{ \frac{dS}{dt}} = -1 + \frac{\gamma}{\b
 
 Invocas el teorema fundamental de calculo 
 
-$$ I(S) = \int_c^s \frac{dI}{dS}\Bigr|_{u=s}du + I(c) = -S + \gamma/\beta \ln{S}+ \text{constante} (*) $$
+$$ I(S) = \int_c^s \frac{dI}{dS}\Bigr|_{u=s}du + I(c) = -S + \gamma/\beta \ln{S}+ \text{constante} $$
 
-De aqui puedes sacar bastante informacion. Dos pedazos de informacion, por ejemplo, son la cantidad maxima de infectados en un instante de tiempo durante toda la trayectoria, $I_{max}$
+De aqui puedes sacar bastante informacion. Dos pedazos de informacion, por ejemplo, son la cantidad maxima de infectados en un instante de tiempo durante toda la trayectoria $I$
 
 $$I_{max} = I(\gamma/\beta) = S_0\left( 1 - \frac{1 + \ln{R_0}}{R_0}\right) $$
 
