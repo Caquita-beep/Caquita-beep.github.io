@@ -31,7 +31,7 @@ $$ \frac{dR}{dt} = \gamma I \ \ \ \ \ (3) $$
 
 con las condiciones iniciales $S(0) = S_0 >0, I(0) = I_0 >0$, $R(0) = 0$. Fijate que $S(t) + I(t) +  R(t) =  S_0 + I_0 = N$, ya que la poblacion, por asuncion, es constante.
 
-Tecnicamente, esto es un sistema de ecuaciones diferenciales ordinarias no lineal. Si te suena complicado, no te lo creas. No lo es. Cada ecuacion te dice de manera cuantificada, el cambio de la cantidad de individous de cada compartimento en un instante de tiempo. $(1)$, por ejemplo, te dice que tan rapido cambia la poblacion de $S$ en un instante de tiempo. Que tan rapido es? La respuesta es $- \beta SI$. Por que? Miralo de esta forma: por cada infectado por instante de tiempo, hay $N\beta$ contactos. De esos  $N\beta$ contactos, $S/N$ son con sucsceptibles (por que? Pista: recuerda asuncion sobre distribucion de la gente en la poblacion). Como hay $I$ infectados, estamos hablando que son $(N\beta) (S/N)(I) = \beta SI$. El signo negativo esta includido porque a medida que la gente se infecta, la cantidad de miembros en $S$ disminuye, obviamente. Es decir, si empiezas con una poblacion inicial de $ S_0$ miembros, vas a tener $S(t) < S_0$ para todo $t$ $(t > 0)$. Similarmente, $(2)$, habla sobre $I$ y puedes ver que su cambio depende del cambio neto entre la gente que se enferma y los que se recuperan. Nada del otro mundo.
+Tecnicamente, esto es un sistema de ecuaciones diferenciales ordinarias no lineal. Si te suena complicado, no te lo creas. No lo es. Cada ecuacion te dice de manera cuantificada, el cambio de la cantidad de individous de cada compartimento en un instante de tiempo. $(1)$, por ejemplo, te dice que tan rapido cambia la poblacion de $S$ en un instante de tiempo. Que tan rapido es? La respuesta es $- \beta SI$. Por que? Miralo de esta forma: por cada infectado por instante de tiempo, hay $N\beta$ contactos. De esos  $N\beta$ contactos, $S/N$ son con sucsceptibles (por que? Pista: recuerda asuncion sobre distribucion de la gente en la poblacion). Como hay $I$ infectados, estamos hablando que son $(N\beta) (S/N)(I) = \beta SI$. El signo negativo esta includido porque a medida que la gente se infecta, la cantidad de miembros en $S$ disminuye, obviamente. Es decir, si empiezas con una poblacion inicial de $ S_0$ miembros, vas a tener $S(t) < S_0$ para todo $t$ $(t > 0)$. Similarmente, $(2)$, habla sobre $I$ y puedes ver que su cambio depende del cambio neto entre la gente que se enferma y los que se recuperan.
 
 De importancia en particular son los parametros $\beta$ y $\gamma$. $\beta$ es una fraccion y tiene unidades de contactos por persona por dia. $\gamma$, en cambio, es la fraccion de infectados que se recuperan por unidad de tiempo y no soprendentemente lo llaman, a veces, como "el removal rate". Y fijate que $1/\gamma $ es el tiempo promedio de infeccion. Por ejemplo, si $\gamma = 1/10$, o sea, por dia el $10\%$ de la gente infectada se recupera, entonces $1/\gamma = 10$ dias y esto es decir que, en promedio, son $10$ dias que alguien infectado puede infectar a otros, antes de recuperarse.
 
@@ -42,11 +42,10 @@ $Cuando$ $hay$ $epidemia?$
 Para ahorrar espacio, usare a veces la notacion de Lagrange para representar derivadas ($\frac{dS}{dt} = S'$). 
 
 Escribe $S'_{*} = -S'$. Ahora $(2)$ es 
-$$
-I' = S'_{*}  - R'
-$$
 
-y como $I'$ representa el cambio de cantidad de infectados en un instante de tiempo. para que haya epidemia requerimos que sea positivo, indicando que el numero de infectados incrementa en funcion de tiempo.
+$$I' = S'_{*}  - R'$$
+
+y como $I'$ representa el cambio de cantidad de infectados en un instante de tiempo, para que haya epidemia, requerimos que sea positivo.
 
 Como puedes ver, esta ultima relacion es simplemete una resta que dice que, cuando $I' > 0$, hay mas que se enferman que de los que se recuperan, y por tanto cada vez habran mas infectados y tienes epidemia. Inversamente, si hay mas que se recuperen de los que se enferman, $ I' < 0$, y la poblacion de infectados va agotandose poco a poco hasta que se desvanece, y no hay epidemia. Lo importante de esta simple resta es que puedes deducir que la epidemia se desvanece porque la poblacion de infectados se desvanece y no porque se infectaron todos y se acaba lo poblacion de susceptibles.
 
