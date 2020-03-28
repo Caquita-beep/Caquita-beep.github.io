@@ -103,6 +103,10 @@ Para estimar $ S_0$,  ten en cuenta que el modelo asume que la poblacion de los 
 
 Sobre $\beta$ y $\gamma$, hay que estimarlos usando informacion de casos reportados oficialmente. Para el caso Ecuador, lamentablemente, la estimacion de $\gamma$ es particularmente dificil. Hasta ahora, 27 de marzo, solamente en una ocasion se ha reportado oficialemente la recuperacion de 3 pacientes. De hecho, reporte de casos de muertes es diez veces mas a los de recuperacion! Ahora esto, claro esta, no quiere decir que los prospectos de los infectados en Ecuador a recuperase sean bastante malos. Recuperacion puede demorar y es cuestion de tiempo, verdad?
 
+Para la estimaciones, he usado para el 'loss function' en el proceso de optimización el error cuadrático medio (RMSE).
+
+
+
 $Resultados$ $de$ $la$ $simulacion$ $Ecuador$ $con$ $modelo$ $SIR$
 
 Los siguiente datos son actualizados diariamente, a medida que nuevos casos van reportandose, mejorando las estimaciones de los parametros. Mas importante aun, el diario monitoreo de los parametros podra darnos una idea si las tendencias estan mejorando o no.
