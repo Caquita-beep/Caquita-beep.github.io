@@ -4,4 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Es mi blog personal. Y escribir sobre lo que espontaneamente se me ocurra...
+![Juan en vietnam](/vietnam.jpg)
+
+En caso que no lo sabias, honorable visitante, tengo el placer de hacerte saber que este es mi blog personal. 
