@@ -47,7 +47,7 @@ $$I' = S'_{*}  - R'$$
 
 y como $I'$ representa el cambio de cantidad de infectados en un instante de tiempo, para que haya epidemia, requerimos que sea positivo.
 
-Como puedes ver, esta ultima relacion es simplemete una resta que dice que, cuando $I' > 0$, hay mas que se enferman que de los que se recuperan, y por tanto cada vez habran mas infectados y tienes epidemia. Inversamente, si hay mas que se recuperen de los que se enferman, $ I' < 0$, y la poblacion de infectados va agotandose poco a poco hasta que se desvanece, y no hay epidemia. Lo importante de esta simple resta es que puedes deducir que la epidemia se desvanece porque la poblacion de infectados se desvanece y no porque se infectaron todos y se acaba lo poblacion de susceptibles.
+Como puedes ver, esta ultima relacion es simplemete una resta que dice que, cuando $I' > 0$, hay mas que se enferman que de los que se recuperan, y por tanto cada vez habran mas infectados y tienes epidemia. Inversamente, si hay mas que se recuperen de los que se enferman, $ I' < 0$, y la poblacion de infectados va agotandose poco a poco hasta que se acaba, y no hay epidemia. Lo importante de esta simple resta es que puedes deducir que la epidemia se desvanece porque la poblacion queda libre de infectados y no porque se infectaron todos.
 
 Ahota observa que cuando hay epidemia
 
