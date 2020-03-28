@@ -69,7 +69,7 @@ Denota $S_0\beta/\gamma$ con el simbolo $R_0$. $R_0$ es conocido como el $basic$
 
 $Cuando$ $se$ $acaba$ $esto?$
 
-Esa informacion podemos deducir de las soluciones del sistema, las cuales, felizmente, es posible conseguir explicitamente aunque hay que reducir la dimension del sistema, lo cual facilita las cosas y terminas conalgo asi:
+Esa informacion podemos deducir de las soluciones del sistema, las cuales, felizmente, es posible conseguir explicitamente aunque hay que cambiar la perspectiva del problema, el cual facilita las cosas y terminas con algo asi:
 
 $$ \frac{dI}{dt} =  \frac{dI}{dS}  \frac{dS}{dt}$$
 
