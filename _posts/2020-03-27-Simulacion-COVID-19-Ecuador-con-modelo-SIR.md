@@ -17,7 +17,7 @@ El coronavirus 2 del síndrome respiratorio agudo severo (SARS-CoV-2) es el caus
 
 Y esto es todo lo que dire sobre la biologia del virus, por el simple hecho que no me sirve para mis propositos con este escrito. Lo que ahora me interesa es, usando lo que sabemos hasta ahora,  poder escribir sobre respuestas a preguntas como, si nos infectaremos todos? Cuanta gente infectada tiene que haber para que haya una epidemia? Si hay epidemia, que se necesita hacer para que disminuya y desaparezca? Y mas importante aun, cuando mierda se acaba esto? Felizmente existen modelos matematicos simples cuyo proposito es modelar epidemias, y que cualquiera puede usar para explorar y tratar de responder preguntas de interes practico que uno tenga.
 
-$El modelo$
+$El$ $modelo$
 
 Ahora bien, resulta que el modelo en epidemologia mas sencillo y que nos puede dar algunas ideas es el modelo "SIR", letras siendo las inciales de las palabras "Susceptible, Infected, Recovered", del ingles, aunque conincide con sus equivalentes en espanol. Este modelo divide la poblacion en tres compartimentos: el de los suceptibles $S$, los infectados $I$, y los recuperados $R$. Bajo este modelo, existen varias asunciones. Se asume, por ejemplo, que los miembros de $R$ no pueden ser re-infectados por el virus. Tampoco hay introduccion/sacada de miembros a la poblacion, fuere por migracion o por nuevos nacimientos, muertes... y esto es decir que la poblacion bajo estudio es constante; se asume que los miembros de toda la poblacion estan distribuidos en proporciones iguales, o sea, que es homogenea: y, para rematar, no se asume un tiempo de incubacion... Nada mas lejos de la realidad, pero util, como vamosa ver, sin embargo!
  
@@ -25,11 +25,9 @@ Podran sonar como restricciones muy duras, especialmente la ultima, y no lo voy 
 
 Ahora dejenme introducirles el modesto modelo $SIR$:
 
-$$
-\frac{dS}{dt} = - \beta SI \\
-\frac{dI}{dt} = \beta SI - \gamma I  \\
-\frac{dR}{dt} = \gamma I
-$$
+$$ \frac{dS}{dt} = - \beta SI  $$
+$$ \frac{dI}{dt} = \beta SI - \gamma I $$
+$$ \frac{dR}{dt} = \gamma I $$
 con las condiciones iniciales $S(0) = S_0 >0, I(0) = I_0 >0$, $R(0) = 0$. Fijate que $S(t) + I(t) +  R(t) =  S_0 + I_0 = N$, ya que la poblacion, por asuncion, es constante.
 
 Tecnicamente, esto es un sistema de ecuaciones diferenciales ordinarias no lineal. Si te suena complicado, no te lo creas. No lo es. Cada ecuacion te dice de manera cuantificada, el cambio de la
