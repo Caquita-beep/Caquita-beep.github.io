@@ -95,11 +95,11 @@ $Simulacion$ $Ecuador$
 
 $Preliminares$
 
-Para poner el modelo a correr se necesita los valores de los parametros $\beta$ y $\gamma$ y las condiciones iniciales $S_0,I_0, R_0$. Hay que estimarlos y en este caso es particularmente dificil. Primeramente, porque las estimaciones dependeran de los reportes oficiales y esto es un problema. Pues, como ya saben, no hay suficiente diagnostico y por tanto las cifras reportadas realmente no representa las cifras reales. El otro problema es que no sabemos con seguridad si la cifra que el gobierno reporta al publico, es la cifra que ellos tienen y la 'real' aunque, de todas formas, esta cifra tampoco es la cifra real, por la falta de diagnosticos. Entonces, como puedes imaginar, evidentemente las estimaciones basadas en informacion incompleta seguramente no seran precisas, peor aun cuando la incompleta informacion tambien es muy poca. Y para rematar, el modelo $SIR$ no es el apropiado debido a sus restricciones. A pesar de todo esto, es un experimento y me interesa saber las proyecciones que este simple modelo pueda darnos. 
+Para poner el modelo a correr se necesita los valores de los parametros $\beta$ y $\gamma$ y las condiciones iniciales $S_0,I_0, R_0$. Hay que estimarlos y en este caso es particularmente dificil. Primeramente, porque las estimaciones dependeran de los reportes oficiales y esto es un problema. Pues, como ya saben, no hay suficiente diagnostico y por tanto las cifras reportadas realmente no representa las cifras reales. El otro problema es que no sabemos con seguridad si la cifra que el gobierno reporta al publico, es la cifra que ellos tienen y la 'real' aunque, de todas formas, esta cifra tampoco es la cifra real, por la falta de diagnosticos. Entonces, como puedes imaginar, evidentemente las estimaciones basadas en informacion incompleta seguramente no seran precisas, peor aun cuando la incompleta informacion tambien es muy poca. Y para rematar, no te olvides que el modelo $SIR$ no es el apropiado debido a sus restricciones.
 
 Entonces, sin mas quejas, voy a suponer que $I_0$ es igual a $6$, no obstante pareciera que todo el relajo empezo con la senora que ha venido de Espana, aunque es bastante la gente que ha venido de Europa y no creo que sea realista asignar $I_0 = 1$. Pero el verdadero motivo de ponerlo igual a seis es porque los datos con los que estoy trabajando (de HDX), tiene reportado como $6$ casos desde el primero de marzo... 
 
-Para estimar $ S_0$,  ten en cuenta que el modelo asume que la poblacion de los tres compartimentos esta distribuida homogeneamente y y eso obviamente no ocurre en el mundo real. Para darle la vuelta al problema, voy a asumir que $S_0$ es, en cambio, la poblacion susceptible expuesta, o sea, una parte de toda la poblacion, y entonces pondre $S_0 = 50000$. Esto me conviene tambien, porque la basura de mi laptop tendra serios problemas computando cifras con uno o dos ordenes de magnitud superior a mi cifra.
+Para estimar $ S_0$,  ten en cuenta que el modelo asume que la poblacion de los tres compartimentos esta distribuida homogeneamente y y eso obviamente no ocurre en el mundo real. Para darle la vuelta al problema, voy a asumir que $S_0$ es, en cambio, la poblacion susceptible expuesta, o sea, una parte de toda la poblacion, y entonces pondre $S_0 = 50000$. Esto me conviene tambien, porque la basura de mi laptop tendra serios problemas computando cifras con uno o dos ordenes de magnitud superior a mi mi cifra asignada.
 
 Sobre $\beta$ y $\gamma$, hay que estimarlos usando informacion de casos reportados oficialmente. Para el caso Ecuador, lamentablemente, la estimacion de $\gamma$ es particularmente dificil. Hasta ahora, 27 de marzo, solamente en una ocasion se ha reportado oficialemente la recuperacion de 3 pacientes. De hecho, reporte de casos de muertes es diez veces mas a los de recuperacion! Ahora esto, claro esta, no quiere decir que los prospectos de los infectados en Ecuador a recuperase sean bastante malos. Recuperacion puede demorar y es cuestion de tiempo, verdad?
 
@@ -121,9 +121,10 @@ Valor de los parametros:
 
 ![Proyecciones](/vtab.png)
 
-Aqui ya te das cuenta que los numeros estan mal y eso era de esperarse. Hay varias posibles razones de la causa y posibles arreglos que puedan enmendar un poco los numeros. Pero creanme, ese es otro trabajo, y ahora me da pereza escribir sobre eso. De hecho, este articulo ha sido mas largo de lo que esperaba. Ademas, si le doy tiempo al tiempo, a medida que hayan mas datos, las estimaciones seran mejores... Eso espero. 
+Aqui ya te das cuenta que los numeros estan duera de orbita y eso era de esperarse. Hay varias posibles razones de la causa y posibles arreglos que puedan enmendar un poco los numeros. Pero eso ya sera para otra ocasion. Ahora me da pereza escribir sobre eso. De hecho, este articulo ha sido mas largo de lo que esperaba. Ademas, si le doy tiempo al tiempo, a medida que hayan mas datos, las estimaciones seran mejores... Eso espero.
 
-Como fuere, quizas me anime a escribir otro articulo usando extensiones del presente modelo que son mas apropiados para la circunstancia. Quizas..
+Como fuere, quizas me anime a escribir otro articulo usando extensiones del presente modelo tambien, que son mas apropiados para la circunstancia. Quizas..
+
 
 Bis bald!
 Juan
