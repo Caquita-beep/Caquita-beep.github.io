@@ -25,11 +25,11 @@ Podran sonar como restricciones muy duras, especialmente la ultima, y no lo voy 
 
 Ahora dejenme introducirles el modesto modelo $SIR$:
 
-$$ \frac{dS}{dt} = - \beta SI \ (1)$$
+$$ \frac{dS}{dt} = - \beta SI \\ (1)$$
 
-$$ \frac{dI}{dt} = \beta SI - \gamma I \ (2) $$
+$$ \frac{dI}{dt} = \beta SI - \gamma I \\ (2) $$
 
-$$ \frac{dR}{dt} = \gamma I \ (3) $$
+$$ \frac{dR}{dt} = \gamma I \\ (3) $$
 
 con las condiciones iniciales $S(0) = S_0 >0, I(0) = I_0 >0$, $R(0) = 0$. Fijate que $S(t) + I(t) +  R(t) =  S_0 + I_0 = N$, ya que la poblacion, por asuncion, es constante.
 
@@ -68,7 +68,7 @@ Ambas expresiones te dicen bajo que condiciones la epidemia es garantizada. Cuan
 
 $$ 0 = S'_{*}  - R' \iff  S'_{*}  = R' $$
 
-Denota $S_0\beta/\gamma$ con el simbolo $R_0$. $R_0$ es conocido como el $basic $reproduction$ $number$ y es el numero de infecciones causadas por un infectado introducido a una poblacion susceptible, a lo largo de su vida como agente infeccioso. El ratio $\beta/\gamma$ en $R_0$ a veces se lo llama el "contact number".
+Denota $S_0\beta/\gamma$ con el simbolo $R_0$. $R_0$ es conocido como el $basic$ $reproduction$ $number$ y es el numero de infecciones causadas por un infectado introducido a una poblacion susceptible, a lo largo de su vida como agente infeccioso. El ratio $\beta/\gamma$ en $R_0$ a veces se lo llama el "contact number".
 
 $Cuando$ $se$ $acaba$ $esto?$
 
@@ -82,19 +82,18 @@ Invocas el teorema fundamental de calculo
 
 $$ I(S) = \int_c^s \frac{dI}{dS}\Bigr|_{u=s}du + I(c) = -S + \gamma/\beta \ln{S}+ \text{constante} (*) $$
 
-De aqui puedes sacar bastante informacion. Dos pedazos de informacion, por ejemplo, son el momento cuando no hay infectados y tambien la cantidad maxima de infectados en un instante de tiempo durante toda la trayectoria, $I_{max}$. De hecho
+De aqui puedes sacar bastante informacion. Dos pedazos de informacion, por ejemplo, son la cantidad maxima de infectados en un instante de tiempo durante toda la trayectoria, $I_{max}$
 
 $$I_{max} = I(\gamma/\beta) = S_0\left( 1 - \frac{1 + \ln{R_0}}{R_0}\right) $$
 
-Lo que puedes ver es que $I = 0$ (es decir, cero gente infectada), cuando $S$ es positivo. Por tanto, segun el modelo, la epidemia termina antes de que todos se infecten y una parte se sale con la suya, en teoria... 
-
-Podemos darnos una idea cuando esto se acaba encontrando las raices (los puntos de equilibrio) de (*).
-
-Para encontrar la cantidad de susceptibles que sobran, puedes econtrar las raice de la funcion trascendental
+Y al resolver $ \frac{dS}{dR} = -\frac{\beta}{\gamma}S$, la cantidad de susceptibles que sobran cuando $I = 0$ la tienes al resolverlas raices de la funcion trascendental
 
 $$ S(\infty)= S_0e^{\beta/\gamma(N_0 - S(\infty))} $$
 
-Esta expresion la puedes conseguir resolviendo $ \frac{dS}{dR} = -\frac{\beta}{\gamma}S$, como podras verificar.
+siendo este numero positivo (por que?) lo que implica que, segun el modelo, la epidemia termina antes de que todos se infecten y una parte se sale con la suya, en teoria...
+
+Ademas puedes deducir los tiempos de estos eventos...
+
 
 $Simulacion$ $Ecuador$
 
