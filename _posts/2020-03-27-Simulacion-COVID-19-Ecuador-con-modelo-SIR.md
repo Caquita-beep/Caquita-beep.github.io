@@ -105,8 +105,6 @@ Sobre $\beta$ y $\gamma$, hay que estimarlos usando informacion de casos reporta
 
 Para la estimaciones, he usado para el 'loss function' en el proceso de optimización el error cuadrático medio (RMSE).
 
-
-
 $Resultados$ $de$ $la$ $simulacion$ $Ecuador$ $con$ $modelo$ $SIR$
 
 Los siguiente datos son actualizados cada tres dias, a medida que nuevos casos van reportandose, mejorando las estimaciones de los parametros. Mas importante aun, el diario monitoreo de los parametros podra darnos una idea si las tendencias estan mejorando o no.
@@ -115,3 +113,13 @@ Aqui tienes la simulacion a largo plazo. Recuerden que hacer proyecciones a larg
 
 ![Proyecciones](/Ecuador.png)
 
+Y alrededor de nuestra fecha actual 
+
+![Proyecciones](/EcuadorZ.png)
+
+Valor de los parametros:
+
+![Proyecciones](/tabla.png)
+
+Bis bald!
+Juam
