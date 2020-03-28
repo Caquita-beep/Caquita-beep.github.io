@@ -25,11 +25,11 @@ Podran sonar como restricciones muy duras, especialmente la ultima, y no lo voy 
 
 Ahora dejenme introducirles el modesto modelo $SIR$:
 
-$$ \frac{dS}{dt} = - \beta SI  (1)$$
+$$ \frac{dS}{dt} = - \beta SI$$ $(1)$
 
-$$ \frac{dI}{dt} = \beta SI - \gamma I  (2)$$
+$$ \frac{dI}{dt} = \beta SI - \gamma I $$ $(2)$
 
-$$ \frac{dR}{dt} = \gamma I  (3)$$
+$$ \frac{dR}{dt} = \gamma I$$ $(3)$
 
 con las condiciones iniciales $S(0) = S_0 >0, I(0) = I_0 >0$, $R(0) = 0$. Fijate que $S(t) + I(t) +  R(t) =  S_0 + I_0 = N$, ya que la poblacion, por asuncion, es constante.
 
@@ -82,7 +82,7 @@ Invocas el teorema fundamental de calculo
 
 $$ I(S) = \int_c^s \frac{dI}{dS}\Bigr|_{u=s}du + I(c) = -S + \gamma/\beta \ln{S}+ \text{constante} (*) $$
 
-De aqui puedes sacar bastante informacion. Dos pedazos de informacion son el momento cuando no hay infectados y tambien el momento de cantidad maxima de infectados, $I_{max}$. De hecho
+De aqui puedes sacar bastante informacion. Dos pedazos de informacion, por ejemplo, son el momento cuando no hay infectados y tambien la cantidad maxima de infectados en un instante de tiempo durante toda la trayectoria, $I_{max}$. De hecho
 
 $$I_{max} = I(\gamma/\beta) = S_0\left( 1 - \frac{1 + \ln{R_0}}{R_0}\right) $$
 
@@ -91,6 +91,7 @@ Lo que puedes ver es que $I = 0$ (es decir, cero gente infectada), cuando $S$ es
 Podemos darnos una idea cuando esto se acaba encontrando las raices (los puntos de equilibrio) de (*).
 
 Para encontrar la cantidad de susceptibles que sobran, puedes econtrar las raice de la funcion trascendental
+
 $$ S(\infty)= S_0e^{\beta/\gamma(N_0 - S(\infty))} $$
 
 Esta expresion la puedes conseguir resolviendo $ \frac{dS}{dR} = -\frac{\beta}{\gamma}S$, como podras verificar.
